@@ -1,0 +1,38 @@
+@media (min-width: 992px) {
+  .page ul {
+    column-count: 2; /* Указывает количество колонок */
+    column-gap: 1em; /* Устанавливает расстояние между колонками */
+    li {
+      margin-bottom: 1em;
+      break-inside: avoid-column;
+      -webkit-column-break-inside: avoid; /* Для Safari и Chrome браузеров */
+      page-break-inside: avoid; /* Для Firefox браузеров */
+    }
+  }
+}
+
+.page ul:first-of-type {
+  padding: 0;
+}
+
+.page-main {
+  color: #fff;
+  background: linear-gradient(270.00deg, rgba(0, 167, 126, 0.9) -14.167%,rgba(45, 188, 182, 0.9) 71.15%,rgba(142, 216, 248, 0.9) 122.187%);
+  padding: 2.2rem 0;
+  position: relative;
+}
+
+.page-main a {
+  color: #fff;
+}
+
+.page h2 {
+  padding-top: 2.5rem;
+}
+
+.page-main-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}

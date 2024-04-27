@@ -1,0 +1,159 @@
+
+/* Navbar */
+.navbar {
+  padding: 70px 0 .5rem 0;
+  transition: all 0.5s;
+  background-color: #fff;
+
+  &.sticky {
+    padding: 20px 0 0.5rem 0;
+  }
+
+  .nav-item {
+    white-space: nowrap;
+  }
+}
+
+.navbar-nav .nav-link {
+  color: $text-color;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+
+  &:hover,
+  &.active {
+    color: $light-text-color;
+  }
+
+  &.active {
+    &::after {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  &::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url(/img/star.svg);
+    position: absolute;
+    top: 5px;
+    right: -12px;
+    opacity: 0;
+    transition: all .5s;
+    transform: translateY(-10px);
+    background-size: 100%;
+  }
+}
+
+.navbar-collapse {
+  font-size: $smallFontSize;
+  padding: 0 10px;
+}
+/* Navbar end*/
+
+/* Navbar mobile */
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler .icon-bar {
+  background-color: $text-color;
+  border-radius: 2px;
+  display: block;
+  height: 3px;
+  width: 25px;
+
+  + .icon-bar {
+    margin-top: 4px;
+  }
+}
+
+.icon-bar,
+.navbar-toggler .icon-bar,
+.navbar-toggler.toggle-clicked .icon-bar {
+  transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+}
+
+.navbar-toggler.toggle-clicked .icon-bar:nth-child(1) {
+  transform: rotate(-43deg);
+  margin-left: -27px !important;
+  min-width: 31px;
+}
+
+.navbar-toggler.toggle-clicked .icon-bar:nth-child(2) {
+  transform: rotate(43deg);
+  margin-left: -27px !important;
+  margin-top: -3px !important;
+  min-width: 31px;
+}
+
+.navbar-toggler.toggle-clicked .icon-bar:nth-child(3) {
+  transform: rotate(37deg);
+  margin-left: -1px !important;
+  width: 21px !important;
+  opacity: 0;
+  margin-top: -2px;
+}
+
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding-top: 20px;
+    &.sticky {
+      padding-top: 0.5rem;
+    }
+    &-brand {
+      font-size: 18px;
+      img {
+        height: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navOpened .navbar {
+    background-color: #fff;
+  }
+
+  .navbar-nav {
+    height: 100vh;
+    margin-top: 2em;
+    margin-left: 60px !important;
+  }
+
+  .navbar {
+    padding-top: 20px;
+    &-shrink {
+      padding-top: 0.5rem;
+    }
+    &-brand {
+      font-size: 18px;
+      img {
+        height: 47px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .nav-link {
+    font-size: 24px;
+    &::before {
+      display: none;
+    }
+    &.active {
+      font-weight: bold;
+  
+    }
+  }
+}
+
+@media (max-width: 344px) {
+  .navbar-brand img {
+    height: 30px;
+  }
+}

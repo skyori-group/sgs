@@ -1,0 +1,32 @@
+#main {
+
+  // .bg-img {
+  //   position: absolute;
+  //   left: -60px;
+  //   z-index: -3;
+  // }
+
+  .h3 {
+    font-weight: 400;
+  }
+}
+
+#main::before {
+  content: '';
+  background-image: url(/img/home/main.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto;
+  position: absolute;
+  height: 1700px;
+  width: 100%;
+  top: 3rem;
+  left: 0;
+  z-index: -2;
+}
+
+#main .panel {
+  max-width: 450px;
+  z-index: 1;
+  position: relative;
+}

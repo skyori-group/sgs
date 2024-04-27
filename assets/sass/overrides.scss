@@ -1,0 +1,125 @@
+* {
+  outline: 0 !important;
+}
+
+html {
+  font-size: $font-size;
+}
+
+body {
+  color: $text-color;
+  font-family: $font-family;
+  font-size: $font-size;
+  padding-top: 130px;
+  overflow-x: hidden;
+  position: relative;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+h5 {
+  font-size: $font-size;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.35s ease-in-out;
+
+  &:hover {
+    color: $btn-active-background-color;
+    text-decoration: none;
+  }
+}
+
+b {
+  font-weight: bold; // Add the correct font weight in Chrome, Edge, and Safari
+}
+
+/* Button */
+.btn {
+  border-radius: 8px;
+  padding: $btn-padding;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: $btn-background-color;
+  border-color: $btn-background-color;
+  box-shadow: 0px 20px 64px -10px rgb(103, 201, 211);
+
+  &:hover {
+    background-color: $btn-hover-background-color;
+    border-color: $btn-hover-background-color;
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active {
+    background-color: $btn-active-background-color;
+    border-color: $btn-active-background-color;
+  }
+  
+  &.focus,
+  &:focus {
+    box-shadow: none;
+  }
+}
+/* Button end */
+
+/* Card */
+.card {
+  color: $text-color;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 4px 0px rgba(0, 2, 41, 0.08);
+  overflow: hidden;
+}
+
+.card-title {
+  margin-bottom: 4px;
+}
+
+/* Card end*/
+
+.collapsing {
+  transition: height .35s ease;
+}
+
+.accordion-btn {
+  position: relative;
+  width: 100%;
+  font-size: 22px;
+  line-height: 20px;
+  padding: 35px 0;
+  text-align: left;
+}
+.btn.accordion-btn:focus {
+  box-shadow: none;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ebecf0;
+  padding: 0 20px;
+  position: relative;
+  transition: .3s;
+}
+
+.accordion-item.active {
+  box-shadow: 0 20px 20px rgba(3,4,28,.08);
+  border-radius: 0 0 20px 20px;
+}
+
+a .lnr-arrow-right {
+  line-height: 1.2;
+  vertical-align: bottom;
+  margin-left: 0.2rem;
+}

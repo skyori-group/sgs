@@ -1,0 +1,43 @@
+.map-dark-bg {
+  color: #fff;
+  background-image: url(/img/map-dark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#maps_functionality {
+  margin-top: -160px;
+  position: relative;
+  img {
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+#maps_functionality .map-dark-bg {
+  border-radius: 20px;
+  border: 6px solid #fff;
+  box-shadow: 0px 1px 3px 0px rgba(18, 20, 32, 0.2);
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+#maps_functionality .map-dark-bg:after {
+  position: absolute;
+  content: "";
+  top: 42px;
+  left: -65px;
+  right: 0;
+  height: 105%;
+  width: 114%;
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, .022), hsla(0, 0%, 100%, 0));
+  border: 1px solid hsla(0, 0%, 100%, .14);
+  filter: drop-shadow(0 30px 50px rgba(1, 6, 20, .12));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 30px 50px rgba(1,6,20,.12);
+  border-radius: 20px;
+  z-index: -2;
+}
