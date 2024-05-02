@@ -1,5 +1,6 @@
 @media (min-width: 992px) {
-  .page ul {
+  .page .styled-list ul,
+  .page .two-columns-list ul {
     column-count: 2; /* Указывает количество колонок */
     column-gap: 1em; /* Устанавливает расстояние между колонками */
     li {
@@ -11,7 +12,7 @@
   }
 }
 
-.page ul:first-of-type {
+.styled-list ul {
   padding: 0;
 }
 
@@ -35,4 +36,8 @@
   top: 0;
   right: 0;
   height: 100%;
+}
+.page-main .container {
+  position: relative;
+  z-index: 1;
 }

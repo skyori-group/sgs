@@ -98,8 +98,8 @@ b {
   position: relative;
   width: 100%;
   font-size: 22px;
-  line-height: 20px;
-  padding: 35px 0;
+  line-height: 26px;
+  padding: 2rem 0;
   text-align: left;
 }
 .btn.accordion-btn:focus {
@@ -115,11 +115,20 @@ b {
 
 .accordion-item.active {
   box-shadow: 0 20px 20px rgba(3,4,28,.08);
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 1rem 1rem;
 }
 
+.big-panel .lnr-arrow-right,
+.page-footer .lnr-arrow-right,
 a .lnr-arrow-right {
   line-height: 1.2;
   vertical-align: bottom;
   margin-left: 0.2rem;
+}
+
+.lnr-chevron-right {
+  transition: .4s;
+}
+.accordion-item.active .lnr-chevron-right {
+  transform: rotate(90deg);
 }

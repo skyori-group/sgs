@@ -6,7 +6,7 @@
   background-color: #fff;
 
   &.sticky {
-    padding: 20px 0 0.5rem 0;
+    padding: 0.5rem 0;
   }
 
   .nav-item {
@@ -99,61 +99,3 @@
   margin-top: -2px;
 }
 
-
-@media (max-width: 1200px) {
-  .navbar {
-    padding-top: 20px;
-    &.sticky {
-      padding-top: 0.5rem;
-    }
-    &-brand {
-      font-size: 18px;
-      img {
-        height: 70px;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .navOpened .navbar {
-    background-color: #fff;
-  }
-
-  .navbar-nav {
-    height: 100vh;
-    margin-top: 2em;
-    margin-left: 60px !important;
-  }
-
-  .navbar {
-    padding-top: 20px;
-    &-shrink {
-      padding-top: 0.5rem;
-    }
-    &-brand {
-      font-size: 18px;
-      img {
-        height: 47px;
-        margin-right: 10px;
-      }
-    }
-  }
-
-  .nav-link {
-    font-size: 24px;
-    &::before {
-      display: none;
-    }
-    &.active {
-      font-weight: bold;
-  
-    }
-  }
-}
-
-@media (max-width: 344px) {
-  .navbar-brand img {
-    height: 30px;
-  }
-}

@@ -1,7 +1,7 @@
 .page-footer {
   color: #fff;
   position: relative;
-  padding: 60px;
+  padding: 65px 1rem;
 }
 
 .footer-bg {
@@ -12,4 +12,17 @@
   left: 2%;
   width: 96%;
   height: 90%;
+}
+
+.page-footer a {
+  color: #fff;
+  border-bottom: 1px solid;
+}
+
+.page-footer ul { 
+  list-style: none;
+  padding: 0;
+}
+.page-footer ul li {
+  margin-bottom: 0.5rem;
 }
