@@ -1,12 +1,13 @@
 
 /* Navbar */
 .navbar {
-  padding: 70px 0 .5rem 0;
+  padding: 46px 0 .5rem 0;
   transition: all 0.5s;
   background-color: #fff;
 
   &.sticky {
     padding: 0.5rem 0;
+    box-shadow: 0 0 10px 0 #0000000f;
   }
 
   .nav-item {
@@ -50,7 +51,6 @@
 
 .navbar-collapse {
   font-size: $smallFontSize;
-  padding: 0 10px;
 }
 /* Navbar end*/
 

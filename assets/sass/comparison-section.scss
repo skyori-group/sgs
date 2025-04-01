@@ -9,6 +9,26 @@
   padding-bottom: 1rem;
 }
 
+.comparison-table td,
+.comparison-table th {
+  padding: 0.5rem 0.5rem;
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+  padding-left: 2rem;
+}
+
+.comparison-table th:last-child ,
+.comparison-table td:last-child {
+  padding-right: 2rem;
+}
+
+.comparison-table th {
+  padding-top: 2rem;
+  font-weight: 500;
+}
+
 #comparison::before {
   content: '';
   background-image: url(/img/home/table-bg.png);

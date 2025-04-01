@@ -9,8 +9,8 @@
 Сопоставление секций и файлов:
 
 1. Баннер - [main.yml](_data/main.yml)
-2. Веб-карты на платформе SkyoriGIS - [map.yml](_data/map.yml)
-3. Геопортал на платформе SkyoriGIS - [geoportal.yml](_data/geoportal.yml)
+2. Веб-карты на платформе Skyori GIS - [map.yml](_data/map.yml)
+3. Геопортал на платформе Skyori GIS - [geoportal.yml](_data/geoportal.yml)
 4. Импортозамещение - [subimport.yml](_data/subimport.yml)
 
 ## Проекты

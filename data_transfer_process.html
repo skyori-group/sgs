@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About</title>
-  <meta name="description" content="Skyori GIS">
+  <title>Процесс переноса данных</title>
+  <meta name="description" content="Процесс переноса данных Обследование геоданных Первым этапом процесса миграции данных является обследование геоданных в исходной информационной системе. На д...">
 
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" type="text/css" href="/assets/dist/bootstrap/css/bootstrap.min.css">
@@ -20,7 +20,7 @@
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="/assets/fonts/stylesheet.css">
 
-  <link rel="canonical" href="/about/">
+  <link rel="canonical" href="/data_transfer_process.html">
   <link rel="alternate" type="application/rss+xml" title="Skyori GIS" href="/feed.xml">
 </head>
 
@@ -75,34 +75,41 @@
         
         <div class="container position-relative">
           
-            <a href="" class="mb-3 d-block"><img src="/img/icons/arrow-long.svg" alt="" class="pr-3">Вернуться</a>
+            <a href="/#faq" class="mb-3 d-block"><img src="/img/icons/arrow-long.svg" alt="" class="pr-3">Вернуться</a>
           
-          <h1>About</h1>
-          <h4></h4>
+          <h1>Процесс переноса данных</h1>
+          <h4>при миграции с одной информационной системы на другую</h4>
         </div>
       </div>
       <div class="container pt-5">
-        <article class="post">
+        <h2 id="процесс-переноса-данных">Процесс переноса данных</h2>
 
-  <header class="post-header">
-    <h1 class="post-title">About</h1>
-  </header>
+<ol>
+  <li>
+    <p>Обследование геоданных
+Первым этапом процесса миграции данных является обследование геоданных в исходной информационной системе. На данном этапе производится анализ структуры, объема и качества данных, которые требуется перенести на новую платформу. Определяются особенности геоданных, их форматы, связи между слоями и другие важные параметры.</p>
+  </li>
+  <li>
+    <p>Разработка моделей и скриптов переноса векторных данных
+Создание алгоритмов переноса, учет особенностей геоданных и правильное соответствие структур данных. Обеспечение корректного копирования информации из исходной системы в новую.</p>
+  </li>
+  <li>
+    <p>Разработка или настройка растровых слоев
+В случае переноса растровых данных необходимо разработать или настроить слои таким образом, чтобы они корректно отображались и взаимодействовали с другими слоями в новой информационной системе. Это включает в себя выбор форматов хранения растровых данных, определение разрешения, цветовой гаммы и других параметров.</p>
+  </li>
+  <li>
+    <p>Настройка карт, отображения слоев в Skyori GIS
+Определение порядка слоев, установка стилей отображения, создание метаданных и другие действия для корректного представления геоданных.</p>
+  </li>
+</ol>
 
-  <div class="post-content">
-    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
-
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
-
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
-
-
-  </div>
-
-</article>
+<h2 id="как-обеспечить-сохранность-данных-основные-принципы-и-правила">Как обеспечить сохранность данных. Основные принципы и правила</h2>
+<ul>
+  <li>Перенос должен осуществляться в нерабочие часы и/или дни.
+Задача - минимизировать влияние на рабочий процесс и обеспечить целостность данных</li>
+  <li>При переносе данных должны быть сохранены первичные ключи объектов данных. Это позволит избежать дублирования информации и обеспечить правильную идентификацию объектов.</li>
+  <li>После переноса данных должно быть запущено резервное копирование, чтобы иметь возможность быстрого восстановления в случае необходимости.</li>
+</ul>
 
         <div class="row pt-5">
           
